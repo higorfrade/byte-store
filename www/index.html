@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="lib/framework7-bundle.min.css">
     <!-- CSS PERSONALIZADO PARA MENU-->
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/details.css">
+    <link rel="stylesheet" href="css/cart.css">
     <!--Ícones Material Design-->
     <link rel="stylesheet" href="css/materialdesignicons.min.css">
     <!--Ícones RemixIcon-->
@@ -30,7 +32,7 @@
         <div class="view view-main">
 
             <!-- TAB BAR-->
-            <div class="toolbar toolbar-bottom">
+            <div id="mainMenu" class="toolbar toolbar-bottom">
                 <div class="toolbar-inner display-flex">
                     <a href="/index/" class="tab-link link active">
                         <i class="ri-home-2-line"></i>
@@ -57,7 +59,7 @@
 
                 <div class="top-nav">
                     <h1 class="title-logo"><span>Byte</span>Store</h1>
-                    <a href="#" class="btn-cart" data-count="0">
+                    <a href="/cart/" class="btn-cart" data-count="0">
                         <i class="ri-shopping-bag-line"></i>
                     </a>
                 </div>
@@ -109,7 +111,7 @@
 
                         <div id="products" class="products-display margin-top display-flex align-items-center justify-content-start">
                             <div class="item-card">
-                                <a href="#" class="item">
+                                <a href="/details/" class="item">
                                     <div class="img-container">
                                         <img src="./img/airpod.png" alt="AirPod Image">
                                     </div>

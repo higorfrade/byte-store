@@ -10,7 +10,7 @@
     <!-- Color theme for statusbar (Android only) -->
     <meta name="theme-color" content="#2196f3">
     <!-- Your app title -->
-    <title>Home</title>
+    <title>Details</title>
     <!-- Path to Framework7 Library Bundle CSS -->
     <link rel="stylesheet" href="lib/framework7-bundle.min.css">
     <!-- CSS PERSONALIZADO PARA MENU-->
@@ -29,145 +29,64 @@
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
 
-            <!-- TAB BAR-->
-            <div class="toolbar toolbar-bottom">
-                <div class="toolbar-inner display-flex">
-                    <a href="/index/" class="tab-link link active">
-                        <i class="ri-home-2-line"></i>
-                        <span>Home</span>
-                    </a>
-                    <a href="/search/" class="tab-link link">
-                        <i class="ri-search-2-line"></i>
-                        <span>Search</span>
-                    </a>
-                    <a href="/favorites/" class="tab-link link">
-                        <i class="ri-heart-3-line"></i>
-                        <span>Favorites</span>
-                    </a>
-                    <a href="/profile/" class="tab-link link">
-                        <i class="ri-user-line"></i>
-                        <span>Profile</span>
-                    </a>
-
-                </div>
-            </div>
+            
 
             <!-- Initial Page, "data-name" contains page name -->
-            <div data-name="index" class="page color-theme-blue">
-
-                <div class="top-nav">
-                    <h1 class="title-logo"><span>Byte</span>Store</h1>
-                    <a href="#" class="btn-cart" data-count="0">
-                        <i class="ri-shopping-bag-line"></i>
-                    </a>
+            <div data-name="details" class="page color-theme-blue">
+                <!-- TAB BAR-->
+                <div class="toolbar toolbar-bottom">
+                    <div class="toolbar-inner display-flex align-items-center justify-content-center">
+                        <div class="flex-40 text-align-center">
+                            <span class="strike-text color-gray">R$ 1600,00</span>
+                            <h3 class="pricing no-padding no-margin">R$ 1290,00</h3>
+                        </div>
+                        <div class="flex-60"><button class="add-cart">Add to Cart</button></div>
+                    </div>
                 </div>
 
-                <form>
-                    <input type="text" placeholder="Search for products">
-                    <i class="search-icon ri-search-2-line"></i>
-                </form>
-
                 <!-- Scrollable page content -->
-                <div class="page-content">
-                    <div class="block no-margin-top">
-                        <div class="swiper mySwiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img class="img-control" src="./img/ad.png" alt="Phone Ad"></div>
-                                <div class="swiper-slide"><img class="img-control" src="./img/ad2.png" alt="AirPod Ad"></div>
-                                <div class="swiper-slide"><img class="img-control" src="./img/ad3.png" alt="Console Ad"></div>
-                                <div class="swiper-slide"><img class="img-control" src="./img/ad4.png" alt="Computer Ad"></div>
-                            </div>
-                            <div class="swiper-pagination"></div>
+                <div class="page-content-details">
+                    <div class="product-detail">
+                        <div class="button-top">
+                            <a href="/index/"><i class="ri-arrow-left-s-line"></i></a>
+                            <a href="#"><i class="ri-heart-3-line"></i></a>
+                            <a href="#"><i class="ri-share-box-line"></i></a>
                         </div>
-
-                        <div class="display-flex align-items-center justify-content-space-between">
-                            <h2>Categories</h2>
-                            <a href="#">See all <i class="mdi mdi-arrow-right"></i></a>
-                        </div>
-
-                        <div class="swiper categories">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><button class="filter-btn active">All</button></div>
-                                <div class="swiper-slide"><button class="filter-btn">Smartphones</button></div>
-                                <div class="swiper-slide"><button class="filter-btn">Laptops</button></div>
-                                <div class="swiper-slide"><button class="filter-btn">Tablets</button></div>
-                                <div class="swiper-slide"><button class="filter-btn">Headphones</button></div>
-                                <div class="swiper-slide"><button class="filter-btn">Consoles</button></div>
-                                <div class="swiper-slide"><button class="filter-btn">Smartwatches</button></div>
-                                <div class="swiper-slide"><button class="filter-btn">Hardwares</button></div>
-                                <div class="swiper-slide"><button class="filter-btn">Networking</button></div>
-                                <div class="swiper-slide"><button class="filter-btn">Monitors</button></div>
-                                <div class="swiper-slide"><button class="filter-btn">Keyboards</button></div>
-                                <div class="swiper-slide"><button class="filter-btn">Microphones</button></div>
-                                <div class="swiper-slide"><button class="filter-btn">Cameras</button></div>
-                                <div class="swiper-slide"><button class="filter-btn">Drones</button></div>
-                                <div class="swiper-slide"><button class="filter-btn">Printers</button></div>
-                                <div class="swiper-slide"><button class="filter-btn">VR & AR</button></div>
+                        <img src="./img/default.png" alt="Default Image">
+                    </div>
+                    <div class="product-content">
+                        <div class="block">
+                            <div class="line padding-top">
+                                <b id="productName">Product Name</b>
+                                <button class="button-sale"><i class="ri-percent-line"></i> On sale</button>
                             </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-
-                        <div id="products" class="products-display margin-top display-flex align-items-center justify-content-start">
-                            <div class="item-card">
-                                <a href="#" class="item">
-                                    <div class="img-container">
-                                        <img src="./img/airpod.png" alt="AirPod Image">
-                                    </div>
-                                    <div class="name-rating">
-                                        <span class="item-name">Item Name</span>
-                                        <span class="bold margin-right">
-                                            <i class="mdi mdi-star"></i>
-                                            4.5
-                                        </span>
-                                    </div>
-                                    <div class="price bold">R$ 299,99</div>
-                                </a>
+                            <div class="rates display-flex align-items-center justify-content-start margin-top">
+                                <button class="button-rates"><i class="mdi mdi-star"></i> 4.5</button>
+                                <button class="button-rates"><i class="ri-thumb-up-fill"></i> 90%</button>
+                                <span class="color-gray">115 reviews</span>
                             </div>
-                            <div class="item-card">
-                                <a href="#" class="item">
-                                    <div class="img-container">
-                                        <img src="./img/xbox.png" alt="Xbox Image">
-                                    </div>
-                                    <div class="name-rating">
-                                        <span class="item-name">Item Name</span>
-                                        <span class="bold margin-right">
-                                            <i class="mdi mdi-star"></i>
-                                            4.5
-                                        </span>
-                                    </div>
-                                    <div class="price bold">R$ 299,99</div>
-                                </a>
+                            <div class="display-flex align-items-center justify-content-center">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit laborum hic aliquam cumque natus eligendi sit vel fugit fuga, enim totam laboriosam nostrum voluptas obcaecati sint dolores quia, voluptates ex!</p>
                             </div>
-                            <div class="item-card">
-                                <a href="#" class="item">
-                                    <div class="img-container">
-                                        <img src="./img/iphone.png" alt="Iphone Image">
-                                    </div>
-                                    <div class="name-rating">
-                                        <span class="item-name">Item Name</span>
-                                        <span class="bold margin-right">
-                                            <i class="mdi mdi-star"></i>
-                                            4.5
-                                        </span>
-                                    </div>
-                                    <div class="price bold">R$ 299,99</div>
-                                </a>
+                            <div class="display-flex align-items-center justify-content-start">
+                                <div class="capacity"><button class="selected">2 TB</button></div>
+                                <div class="capacity"><button>1 TB</button></div>
+                                <div class="capacity"><button>512 GB</button></div>
                             </div>
-                            <div class="item-card">
-                                <a href="#" class="item">
-                                    <div class="img-container">
-                                        <img src="./img/macbook.png" alt="MacBook Image">
-                                    </div>
-                                    <div class="name-rating">
-                                        <span class="item-name">Item Name</span>
-                                        <span class="bold margin-right">
-                                            <i class="mdi mdi-star"></i>
-                                            4.5
-                                        </span>
-                                    </div>
-                                    <div class="price bold">R$ 299,99</div>
-                                </a>
-                            </div>
+                            <table>
+                                <tr>
+                                    <th>Attributes</th>
+                                    <th>Features</th>
+                                </tr>
+                                <tr>
+                                    <td>Powerful and Durable</td>
+                                    <td>The product's key features include a high-resolution camera and long battery life.</td>
+                                </tr>
+                                <tr>
+                                    <td>Bla bla bla</td>
+                                    <td>The product's bla bla bla.</td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
