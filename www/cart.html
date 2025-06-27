@@ -10,7 +10,7 @@
     <!-- Color theme for statusbar (Android only) -->
     <meta name="theme-color" content="#2196f3">
     <!-- Your app title -->
-    <title>Details</title>
+    <title>My Cart</title>
     <!-- Path to Framework7 Library Bundle CSS -->
     <link rel="stylesheet" href="lib/framework7-bundle.min.css">
     <!-- CSS PERSONALIZADO PARA MENU-->
@@ -28,9 +28,7 @@
 
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
-
             
-
             <!-- Initial Page, "data-name" contains page name -->
             <div data-name="cart" class="page color-theme-blue">
                 <div class="nav-top cart">
@@ -43,16 +41,16 @@
                     <div class="popover-inner">
                         <div class="list">
                             <ul>
-                                <li><a id="empty-cart" href="#" class="list-button popover-close"><i class="mdi mdi-broom"></i> Empty Cart</a></li>
+                                <li><a id="emptyShopCart" href="#" class="list-button popover-close"><i class="mdi mdi-broom"></i> Empty Cart</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div style="margin-bottom: 100px;" class="toolbar toolbar-bottom">
+                <div id="toolbarTotals" style="margin-bottom: 100px;" class="toolbar toolbar-bottom">
                     <div id="total-value" class="toolbar-inner display-flex align-items-center justify-content-center">
                         <div class="display-flex w-80 margin-top bd-bottom justify-content-space-between">
                             <span>Subtotal:</span>
-                            <span class="bold">R$ 800,00</span>
+                            <span id="subtotal" class="bold">R$ 800,00</span>
                         </div>
                         <div class="display-flex w-80 justify-content-space-between">
                             <span>Delivery Fee:</span>
@@ -61,14 +59,14 @@
                     </div>
                 </div>
                 <!-- TAB BAR-->
-                <div class="toolbar toolbar-bottom">
+                <div id="toolbarCheckout" class="toolbar toolbar-bottom">
                     <div class="toolbar-inner display-flex align-items-center justify-content-center">
                         <div class="flex-100"><button class="add-cart">Buy</button></div>
                     </div>
                 </div>
 
                 <!-- Scrollable page content -->
-                <div class="page-content">
+                <div class="page-content-cart">
                    <div id="cartList">
                         <div class="cart-item">
                             <div class="item-img">
@@ -86,7 +84,7 @@
                                     <span>R$ 1290,00</span>
                                     <div class="count">
                                         <a class="minus" href="#">-</a>
-                                        <input class="item-quantity" readonly type="text" value="1">
+                                        <input class="item-quantity" type="text" readonly value="1">
                                         <a class="plus" href="#">+</a>
                                     </div>
                                 </div>

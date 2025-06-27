@@ -31,7 +31,6 @@ var app = new Framework7({
 		},
 		pageInit: function (event, page) {
 		// fazer algo quando a página for inicializada
-      app.views.main.router.navigate('/cart/');
       $.getScript('js/index.js');
       
       var swiper = new Swiper(".mySwiper", {
@@ -105,6 +104,7 @@ var app = new Framework7({
 		},
 		pageInit: function (event, page) {
 		// fazer algo quando a página for inicializada
+      $.getScript('js/details.js');
 		},
 		pageBeforeRemove: function (event, page) {
 		// fazer algo antes da página ser removida do DOM
@@ -127,6 +127,7 @@ var app = new Framework7({
 		},
 		pageInit: function (event, page) {
 		// fazer algo quando a página for inicializada
+      $.getScript('js/cart.js');
 		},
 		pageBeforeRemove: function (event, page) {
 		// fazer algo antes da página ser removida do DOM

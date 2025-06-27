@@ -32,7 +32,7 @@ body {
 }
 
 .title-logo span {
-    background-image: var(--logo-color); /* Exemplo: gradiente de vermelho para azul */
+    background-image: var(--logo-color);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -85,7 +85,7 @@ form {
     position: relative;
 }
 
-input[type="text"] {
+#search {
     width: 90%;
     height: 45px;
     background: var(--bg-secondary);
@@ -196,6 +196,12 @@ input[type="text"] {
     padding-top: 10px;
 }
 
+.name-rating span {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
 .item-name {
     color: gray;
 }
@@ -210,6 +216,10 @@ input[type="text"] {
 
 .bold {
     font-weight: 800;
+}
+
+.load {
+    background: var(--bg-secondary) !important;
 }
 
 .toolbar{

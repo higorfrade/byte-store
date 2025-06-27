@@ -25,6 +25,13 @@
     border-bottom: 1px solid var(--bg-secondary);
 }
 
+.page-content-cart {
+    background: var(--bg-color);
+    max-width: 100%;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+}
+
 #total-value {
     flex-direction: column;
 }
@@ -55,6 +62,10 @@
 
 .nav-top.cart a:last-child {
     margin-right: 20px;
+}
+
+.nav-top.cart strong {
+    font-size: 20px;
 }
 
 #cartList {
@@ -179,7 +190,7 @@
 }
 
 .item-quantity {
-    width: 30px;
+    width: 35px;
     text-align: center;
     background: var(--bg-color) !important;
 }

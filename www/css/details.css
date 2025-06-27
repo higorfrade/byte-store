@@ -158,16 +158,16 @@ table {
     margin-bottom: 20px;
 }
 
-th {
-    background: lightgray;
-}
-
 th, td {
-    padding: 1px;
+    padding: 5px 5px;
     text-align: center;
     border-bottom: 1px solid lightgray;
     border-right: 1px solid lightgray;
     border-left: 1px solid lightgray;
+}
+
+th {
+    background: lightgray;
 }
 
 .pricing {
